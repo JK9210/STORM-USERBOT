@@ -11,6 +11,7 @@ currently being supported with security updates.
 | 1.1.x   | :x:                |
 | 2.0.x   | :white_check_mark: |
 | 2.1.x   | :white_check_mark: |
+| 2.1.1   | :white_check_mark: |
 
 # ʀᴇᴘᴏʀᴛɪɴɢ ᴀ ᴠᴜʟɴᴇʀᴀʙɪʟɪᴛʏ
 
