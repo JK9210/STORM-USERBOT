@@ -7,7 +7,6 @@ heroku3
 aiohttp
 requests
 random2
-asyncio
 gtts
 googlesearch-python
 google
@@ -21,4 +20,3 @@ yt-dlp==2024.5.27
 pyrogram==2.0.105
 openai==0.28
 gunicorn
-py-tgcalls
