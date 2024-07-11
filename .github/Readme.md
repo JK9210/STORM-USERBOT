@@ -39,7 +39,63 @@
 
 ## ᴠᴘꜱ/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏᴛᴍᴇɴᴛ
 
-<b> ᴡᴇ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴄᴍᴅꜱ ꜱᴏᴏɴ.... <img src="https://github.com/VARC9210/STORM-USERBOT/blob/main/res/Z30J.gif" width="20px"></b><br>
+_ᴜɴʟᴇᴀꜱʜ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏꜰ ꜱᴛᴏʀᴍ ᴜꜱᴇʀʙᴏᴛ ᴏɴ ᴀɴʏ ʟɪɴᴜx ᴠᴘꜱ ᴀɴᴅ ᴛᴇʀᴍɪɴᴀʟ ᴇꜰꜰᴏʀᴛʟᴇꜱꜱʟʏ. ᴅᴇᴘʟᴏʏ ɪᴛ ʟɪᴋᴇ ᴀ ᴘʀᴏ ᴀɴᴅ ᴄᴏɴQᴜᴇʀ ᴛʜᴇ ᴅɪɢɪᴛᴀʟ ꜱᴋɪᴇꜱ._
+
+1. **ᴜᴘᴅᴀᴛᴇ ᴘᴀᴄᴋᴀɢᴇꜱ:**   
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+   ```
+
+2. **ɪɴꜱᴛᴀʟʟ ʀᴇQᴜɪʀᴇᴅ ᴘᴀᴄᴋᴀɢᴇꜱ:**
+    ```bash
+    sudo apt install --no-install-recommends -y python3 python3-dev python3-pip python3-virtualenv git mediainfo nano ffmpeg unzip tmux
+    ```
+   
+3. **ᴄʟᴏɴᴇ ɢɪᴛʜᴜʙ ʀᴇᴘᴏꜱɪᴛᴏʀʏ:**
+   ```bash
+   git clone https://github.com/VARC9210/Plugins STORM-USERBOT && cd STORM-USERBOT
+   ```
+
+4. **ᴄᴏɴꜰɪɢ ᴠᴀʀɪᴀʙʟᴇꜱ:**
+   ```bash
+   cp example.env .env && vi .env
+   ```
+   > ɴᴏᴡ ᴘʀᴇꜱꜱ 'i' ᴏɴ ʏᴏᴜʀ ᴋᴇʏʙᴏᴀʀᴅ ᴛᴏ ꜱᴛᴀʀᴛ ᴇᴅɪᴛɪɴɢ ᴛʜᴇ .ᴇɴᴠ ꜰɪʟᴇ.
+   
+   > ɴᴏᴡ ꜰɪʟʟ ᴀʟʟ ᴛʜᴇ ᴇɴᴠ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴛʜᴇ ꜰɪʟᴇ.
+   
+   > ᴛᴏ ꜱᴀᴠᴇ ᴛʜᴇ ꜰɪʟᴇ ᴘʀᴇꜱꜱ 'ESC' ʙᴜᴛᴛᴏɴ ᴀɴᴅ ᴡʀɪᴛᴇ ':wq' ᴜꜱɪɴɢ ʏᴏᴜʀ ᴋᴇʏʙᴏᴀʀᴅ ᴀɴᴅ ᴘʀᴇꜱꜱ 'ENTER'
+   
+   > ʀᴇɴᴀᴍᴇ ᴛʜᴇ ᴇɴᴠ ꜰɪʟᴇ ʙʏ 
+   ```bash
+   mv sample.env .env
+   ```
+
+5. **ɪɴꜱᴛᴀʟʟ ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ:**
+    > ᴄʀᴇᴀᴛᴇ ᴀɴ ᴠɪʀᴛᴜᴀʟᴇɴᴠ ᴀɴᴅ ꜱᴏᴜʀᴄᴇ ɪᴛ.
+    ```bash
+    python3 -m virtualenv venv && source venv/bin/activate
+    ```
+    > ɴᴏᴡ ɪɴꜱᴛᴀʟʟ ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ ʙᴜᴛ ᴍᴀᴋᴇ ꜱᴜʀᴇ ʏᴏᴜ'ʀᴇ ɪɴ (ᴠᴇɴᴠ)
+    ```bash
+    pip3 install -U -r requirements.txt
+    ```
+
+6. **ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ:**
+    > ꜱᴛᴀʀᴛ ᴀ ꜱᴜʙ-ᴛᴇʀᴍɪɴᴀʟ ᴜꜱɪɴɢ ᴛᴍᴜx
+    ```bash
+    tmux new-session -s Storm
+    ```
+    > Now start the bot
+    ```bash
+    chmod +x ./start.sh
+    ```    
+    ```bash
+    ./start.sh
+    ```
+    > ɴᴏᴡ ᴘʀᴇꜱꜱ 'ctrl + B' ᴛʜᴇɴ 'D' ᴛᴏ ᴅᴇᴛᴀᴛᴄʜ ꜰʀᴏᴍ ᴛᴍᴜx ᴀɴᴅ ʟᴇᴛ ʏᴏᴜʀ ʙᴏᴛ ʀᴜɴ ɪɴ ʙᴀᴄᴋɢʀᴏᴜɴᴅ.
+_ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ! ʏᴏᴜ'ᴠᴇ ᴇꜰꜰᴏʀᴛʟᴇꜱꜱʟʏ ʟᴀᴜɴᴄʜᴇᴅ ꜱᴛᴏʀᴍ ᴜꜱᴇʀʙᴏᴛ ᴏɴ ᴀ ʟɪɴᴜx ᴠᴘꜱ ɪɴ ᴊᴜꜱᴛ 6 ꜱᴛʀᴀɪɢʜᴛꜰᴏʀᴡᴀʀᴅ ꜱᴛᴇᴘꜱ._
+
 
 ## ᴛᴇʟᴇɢʀᴀᴍ
 
